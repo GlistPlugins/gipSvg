@@ -21,7 +21,8 @@ gipSvg::gipSvg() {
 }
 
 gipSvg::~gipSvg() {
-
+	delete rast;
+	delete image;
 }
 
 void gipSvg::loadImage(std::string imageName, int width, int height) {
@@ -38,8 +39,6 @@ void gipSvg::loadImage(std::string imageName, int width, int height) {
 	float ty = 0.0f;
 	nsvgRasterize(rast, image, tx, ty, scale, data, W, H, W*4);
 	img.setImageData(data, width, height, 4);
-	nsvgDeleteRasterizer(rast);
-	nsvgDelete(image);
 }
 
 void gipSvg::draw(int x, int y) {

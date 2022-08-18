@@ -4,10 +4,10 @@ Svg plugin for [GlistEngine](https://github.com/GlistEngine/GlistEngine).
 - [GlistEngine](https://github.com/GlistEngine/GlistEngine).
 - Windows, Linux, or MacOS operating system.
 
-##Installation
+## Installation
 Fork & clone this project into ~/dev/glist/glistplugins
 
-##Usage
+## Usage
 - Reads svg images.
 
 ## How To Use 
