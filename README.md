@@ -1,11 +1,15 @@
-# gipEmpty
-This is a baseplate for all the GlistEngine plugins and should be cloned under `~dev/glist/glistplugins` whenever developing a new plugin for the engine.
+# gipSvg
+Svg plugin for [GlistEngine](https://github.com/GlistEngine/GlistEngine).
+### Requirements
+- [GlistEngine](https://github.com/GlistEngine/GlistEngine).
+- Windows, Linux, or MacOS operating system.
 
-The developer should put his external precompiled library files into the plugin's libs folder.
+##Installation
+Fork & clone this project into ~/dev/glist/glistplugins
 
-- Windows developers should not forget to add
-```
-${workspace_loc}\..\..\..\..\glistplugins\gipYourPlugin\libs\bin
-```
-directory to the GlistApp project's PATH list.
-(Project->Properties->C/C++ Build->Environment->PATH)
+##Usage
+- Reads svg images.
+
+## How To Use 
+1. Add gipSvg into plugins of your GlistApp/CMakeLists.txt
+2. Include gipSvg.h in GameCanvas.h
